@@ -43,7 +43,7 @@ classdef RunTimeEnvironment
 
         function removeWrapperFolder(obj)
             % function that looks for the phase folders in the current application
-            % folder and removes the _wrappers folder inside
+            % folder and removes all 'build' folders
 
             fclose all;
 

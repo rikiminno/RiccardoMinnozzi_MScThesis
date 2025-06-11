@@ -9,8 +9,8 @@ toolName = 'OptiDDP';
 %% Update the repository
 
 % flags to allow the git logic to auto update and autoswitch branch
-autoUpdate = true;
-autoSwitch = true;
+autoUpdate = false;
+autoSwitch = false;
 
 if autoUpdate
     % start prints
@@ -104,6 +104,6 @@ if strcmp(userpath, defaultDir)
     end
     userpath(fullfile(toolDirectory, outputDirectoryName));
     cprintf('SystemCommands', strcat("Set ", outputDirectoryName, ...
-        ' as the default userpath directory: all optimization outputs are saved here. \n'));
+        ' as the default userpath directory:\n all solver outputs are saved here. \n'));
 
 end
