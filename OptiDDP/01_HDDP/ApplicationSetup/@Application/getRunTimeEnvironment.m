@@ -32,7 +32,7 @@ if ~exist(outputName, "dir")
 else
     error(strcat("Tried to set the application output directory", ...
         " to ", outputName, ", but the directory already exists."));
-end
+end 
 
 % create the phase output directories
 cd(outputName);
